@@ -126,9 +126,11 @@ void Assignment3::Init()
 	meshList[GEO_FLOOR]->material.kShininess = 5.f;
 
 	//Chest
-	meshList[GEO_CHEST] = MeshBuilder::GenerateOBJ("model1", "OBJ//Treasurechest.obj");
+	meshList[GEO_CHEST] = MeshBuilder::GenerateOBJ("Treasure Chest", "OBJ//Treasurechest.obj");
 	meshList[GEO_CHEST]->textureID = LoadTGA("Image//Treasurechest.tga");
 
+	//Blade
+	meshList[GEO_BLADE] = MeshBuilder::GenerateOBJ("Blade", "OBJ//Blade.obj");
 	//Text
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//calibri.tga");
@@ -350,11 +352,7 @@ void Assignment3::Render()
 	modelStack.Rotate(180, 0.f, 1.f, 0.f);
 	RenderMesh(meshList[GEO_CHEST], false);
 	modelStack.PopMatrix();
-	
-	std::stringstream FramesPerSecond;
-	FramesPerSecond << "FPS" << FramesPerSec;
 
-	RenderTextOnScreen(meshList[GEO_TEXT], FramesPerSecond.str() , Color(0, 0, 0), 3, 1, 18);
 	
 	modelStack.PushMatrix();
 	modelStack.Scale(1.f, 1.f, 0.5f);
@@ -377,6 +375,47 @@ void Assignment3::Render()
 	RenderMesh(meshList[GEO_WALL], false);
 	modelStack.PopMatrix();
 
+	//GIMME DAT ITEM
+	glDisable(GL_DEPTH_TEST);
+	Mtx44 ortho;
+	ortho.SetToOrtho(0, 80, 0, 60, -10, 10); //size of screen UI
+	projectionStack.PushMatrix();
+	projectionStack.LoadMatrix(ortho);
+	viewStack.PushMatrix();
+	viewStack.LoadIdentity(); //No need camera for ortho mode
+	modelStack.PushMatrix();
+	modelStack.LoadIdentity(); //Reset modelStack
+	modelStack.Translate(0.f, .0f, 0.f);
+	modelStack.Scale(5.6f, 5.6f, 5.6f);
+	RenderMesh(meshList[GEO_CHEST], false);
+	projectionStack.PopMatrix();
+	viewStack.PopMatrix();
+	modelStack.PopMatrix();
+	glEnable(GL_DEPTH_TEST);
+
+	//GIMME DAT ITEM
+	glDisable(GL_DEPTH_TEST);
+	ortho.SetToOrtho(0, 80, 0, 60, -10, 10); //size of screen UI
+	projectionStack.PushMatrix();
+	projectionStack.LoadMatrix(ortho);
+	viewStack.PushMatrix();
+	viewStack.LoadIdentity(); //No need camera for ortho mode
+	modelStack.PushMatrix();
+	modelStack.LoadIdentity(); //Reset modelStack
+	modelStack.Translate(60.f, 10.0f, 0.f);
+	modelStack.Scale(2.f, 2.f, 2.f);
+	modelStack.Rotate(-90, 1.f, 0.f, 0.f);
+	modelStack.Rotate(90, 0.f, 0.f, 1.f);
+	RenderMesh(meshList[GEO_BLADE], false);
+	projectionStack.PopMatrix();
+	viewStack.PopMatrix();
+	modelStack.PopMatrix();
+	glEnable(GL_DEPTH_TEST);
+
+	std::stringstream FramesPerSecond;
+	FramesPerSecond << "FPS" << FramesPerSec;
+
+	RenderTextOnScreen(meshList[GEO_TEXT], FramesPerSecond.str(), Color(0, 0, 0), 3, 1, 19);
 }
 
 void Assignment3::RenderMesh(Mesh *mesh, bool enableLight)

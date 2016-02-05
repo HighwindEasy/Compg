@@ -1,11 +1,11 @@
-﻿Build started 4/2/2016 1:17:15 AM.
-     1>Project "C:\Users\Exodus\Desktop\Compg\Assignment3\ComputerGraphics02\ComputerGraphics02.vcxproj" on node 2 (Build target(s)).
+﻿Build started 5/2/2016 11:18:03 PM.
+     1>Project "C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\ComputerGraphics02\ComputerGraphics02.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Programs\Visual Studio 2013\VC\bin\CL.exe /c /IC:\Users\Exodus\Desktop\Compg\Assignment3\\glfw\include /IC:\Users\Exodus\Desktop\Compg\Assignment3\\glew\include /IC:\Users\Exodus\Desktop\Compg\Assignment3\\Common\Source /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt source\Assignment3.cpp
+         E:\Programs\Visual Studio 2013\VC\bin\CL.exe /c /IC:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\\glfw\include /IC:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\\glew\include /IC:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\\Common\Source /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt source\Assignment3.cpp
          Assignment3.cpp
-     1>c:\users\exodus\desktop\compg\assignment3\computergraphics02\source\assignment3.cpp(340): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\exodus\desktop\computergraphics\assignment3\computergraphics02\source\assignment3.cpp(342): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
-         E:\Programs\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Exodus\Desktop\Compg\Assignment3\Debug\MyGraphics.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Exodus\Desktop\Compg\Assignment3\Debug /LIBPATH:"C:\Users\Exodus\Desktop\Compg\Assignment3\\glfw\lib-msvc120" /LIBPATH:C:\Users\Exodus\Desktop\Compg\Assignment3\\glew\lib glew32.lib glfw3.lib opengl32.lib winmm.lib Common.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Exodus\Desktop\Compg\Assignment3\Debug\MyGraphics.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Exodus\Desktop\Compg\Assignment3\Debug\MyGraphics.lib" /MACHINE:X86 Debug\Application.obj
+         E:\Programs\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\Debug\MyGraphics.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\Debug /LIBPATH:"C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\\glfw\lib-msvc120" /LIBPATH:C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\\glew\lib glew32.lib glfw3.lib opengl32.lib winmm.lib Common.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\Debug\MyGraphics.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\Debug\MyGraphics.lib" /MACHINE:X86 Debug\Application.obj
          Debug\Assignment1.obj
          Debug\Assignment2.obj
          Debug\Assignment3.obj
@@ -28,9 +28,9 @@
          Debug\SceneTexture.obj
          Debug\shader.obj
          Debug\Utility.obj
-         ComputerGraphics02.vcxproj -> C:\Users\Exodus\Desktop\Compg\Assignment3\Debug\MyGraphics.exe
-     1>Done Building Project "C:\Users\Exodus\Desktop\Compg\Assignment3\ComputerGraphics02\ComputerGraphics02.vcxproj" (Build target(s)).
+         ComputerGraphics02.vcxproj -> C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\Debug\MyGraphics.exe
+     1>Done Building Project "C:\Users\Exodus\Desktop\ComputerGraphics\Assignment3\ComputerGraphics02\ComputerGraphics02.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.01
+Time Elapsed 00:00:01.05

@@ -33,6 +33,7 @@ class Assignment3 : public Scene
 		GEO_CHEST,
 		GEO_WALL,
 		GEO_MODEL_1,
+		GEO_BLADE,
 		GEO_TEXT,
 		NUM_GEOMETRY,
 	};
