@@ -1,0 +1,7 @@
+A: Rotates the scene leftward
+D: Rotates the scene Rightw
+W: Rotates the scene upward
+W: Rotates the scene downward
+M:Zoom out
+N: Zoom in
+7: Begin animations
