@@ -416,6 +416,10 @@ void Assignment3::Render()
 	FramesPerSecond << "FPS" << FramesPerSec;
 
 	RenderTextOnScreen(meshList[GEO_TEXT], FramesPerSecond.str(), Color(0, 0, 0), 3, 1, 19);
+
+	std::stringstream Positions;
+	Positions << "Position" << positionx << positiony << positionz;
+	RenderTextOnScreen(meshList[GEO_TEXT], Positions.str(), Color(0, 0, 0), 3, 1, 17);
 }
 
 void Assignment3::RenderMesh(Mesh *mesh, bool enableLight)

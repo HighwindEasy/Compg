@@ -75,6 +75,7 @@ public:
 	virtual void Exit();
 	MS modelStack, viewStack, projectionStack;
 	double FramesPerSec;
+	double positionx, positiony, positionz;
 private:
 	unsigned m_vertexArrayID;
 	Mesh *meshList[NUM_GEOMETRY];
